@@ -1,1 +1,98 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cake Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Corner images */
+        .corner {
+            position: absolute;
+            top: 10px;
+            width: 100px;
+        }
+
+        .left {
+            left: 10px;
+        }
+
+        .right {
+            right: 10px;
+        }
+
+        /* Center container */
+        .center {
+            position: relative;
+            top: 100px;
+        }
+
+        /* Cake animation */
+        .cake-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cake-container img {
+            width: 300px;
+        }
+
+        .cake-blow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: flicker 1s infinite;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Image next to cake */
+        .side-img {
+            vertical-align: top;
+            margin-left: 20px;
+            width: 150px;
+        }
+
+        /* Text under cake */
+        .napis {
+            margin-top: 20px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Corner gifs -->
+    <img src="trans.gif" class="corner left">
+    <img src="trans.gif" class="corner right">
+
+    <div class="center">
+
+        <div class="cake-container">
+            <img src="cake.gif">
+            <img src="cakeblow.gif" class="cake-blow">
+        </div>
+
+        <!-- Image next to cake -->
+        <img src="uncjac.png" class="side-img">
+
+        <br>
+
+        <!-- Text under cake -->
+        <img src="napis.gif" class="napis">
+
+    </div>
+
+</body>
+</html>
